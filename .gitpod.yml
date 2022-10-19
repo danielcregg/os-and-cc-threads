@@ -1,0 +1,3 @@
+# Link to custom Docker image
+image:
+  file: .gitpod.Dockerfile
