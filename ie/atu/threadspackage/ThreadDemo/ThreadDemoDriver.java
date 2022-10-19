@@ -1,4 +1,4 @@
-package ie.gmit.threadspackage.ThreadDemo;
+package ie.atu.threadspackage.ThreadDemo;
 
 public class ThreadDemoDriver {
 

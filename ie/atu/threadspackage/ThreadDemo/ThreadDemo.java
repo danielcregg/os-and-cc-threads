@@ -1,4 +1,4 @@
-package ie.gmit.threadspackage.ThreadDemo;
+package ie.atu.threadspackage.ThreadDemo;
 
 class ThreadDemo extends Thread {
 

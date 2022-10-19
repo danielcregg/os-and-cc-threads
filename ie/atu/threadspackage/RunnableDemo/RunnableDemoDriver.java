@@ -1,4 +1,4 @@
-package ie.gmit.threadspackage.RunnableDemo;
+package ie.atu.threadspackage.RunnableDemo;
 
 public class RunnableDemoDriver {
 
