@@ -1,3 +1,6 @@
-# Link to custom Docker image
+
 image:
   file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
