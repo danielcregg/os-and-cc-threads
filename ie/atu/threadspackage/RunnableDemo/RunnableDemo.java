@@ -8,9 +8,11 @@ class RunnableDemo implements Runnable {
 		
 		// This is the code that will be executed by the thread
 		for (int i = 10; i > 0; i--) {
+			// Print the output of the thread. Show its name and the value of i as it counts down.
 			System.out.println(Thread.currentThread().getName() + " countdown: " + i);
 			try {
-				Thread.sleep(10); // Let thread sleep for 10 millisecond
+				// Let the thread sleep for 10 milliseconds between each countdown so that it does not run too fast.
+				Thread.sleep(10); 
 			} catch (InterruptedException e) {
 				System.out.println(e);
 			}
