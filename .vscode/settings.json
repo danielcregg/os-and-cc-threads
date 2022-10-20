@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.fontSize": 18,
+    "java.server.launchMode" : "Standard",
+    "java.debug.settings.console": "integratedTerminal",
+    "files.exclude": {
+        ".github": false, 
+        ".devcontainer": false,
+        "bin": false,
+        "test": false,
+        "target": false,
+        "docs": false,
+        ".gitignore": false,
+        ".vscode": false
+      }
+}

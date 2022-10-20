@@ -4,16 +4,18 @@ class ThreadDemo extends Thread {
 
 	public void run() {
 		
-		System.out.println(this.getName() +" is Running");
+		System.out.println(this.getName() +" is running with priority " + this.getPriority());
 		for (int i = 10; i > 0; i--) {
 			System.out.println(this.getName()+ ": " + i);
-//			try {
-//				Thread.sleep(10); // Let thread sleep for 10 millisecond
-//			} catch (InterruptedException e) {
-//				System.out.println(e);
-//			}
+			try {
+				Thread.sleep(10); // Let thread sleep for 10 millisecond
+			} catch (InterruptedException e) {
+				System.out.println(e);
+			}
 		}
+		
 		System.out.println(this.getName() +" is Exiting");
+
 	}
 
 }

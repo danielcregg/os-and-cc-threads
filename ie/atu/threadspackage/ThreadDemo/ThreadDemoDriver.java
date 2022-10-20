@@ -7,9 +7,10 @@ public class ThreadDemoDriver {
 		Thread thread2 = new ThreadDemo();
 		thread1.setName("Thread 1");
 		thread2.setName("Thread 2");
-		thread2.setPriority(10);
+		thread1.setPriority(Thread.MIN_PRIORITY);
+		thread2.setPriority(Thread.MAX_PRIORITY);
 		thread1.start();
 		thread2.start();
 	}
 
-}
+} // End class
