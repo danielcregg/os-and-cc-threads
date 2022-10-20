@@ -13,7 +13,6 @@ class ThreadDemo extends Thread {
 				System.out.println(e);
 			}
 		}
-		
 		System.out.println(this.getName() +" is Exiting");
 
 	}
