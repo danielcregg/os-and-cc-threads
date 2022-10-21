@@ -6,12 +6,14 @@
     "java.debug.settings.console": "integratedTerminal",
     "files.exclude": {
         ".github": false, 
-        ".devcontainer": false,
+        ".devcontainer": true,
         "bin": false,
         "test": false,
         "target": false,
         "docs": false,
         ".gitignore": false,
-        ".vscode": false
+        ".vscode": true,
+        ".gitpod.yml": true,
+        ".gitpod.Dockerfile": true,
       }
 }
