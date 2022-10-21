@@ -4,8 +4,8 @@ public class RunnableDemoDriver {
 	public static void main(String args[]) {
 
 		// Variables to store thread states
-		String thread1State = null;
-		String thread2State = null;
+		String thread1State = "unknown";
+		String thread2State = "unknown";
 
 		RunnableDemo runnableObject = new RunnableDemo();
 		// Allocate two new threads. Pass them the runnable object and pass them a name.
@@ -18,14 +18,18 @@ public class RunnableDemoDriver {
 
 		// Monitor for changes in thread state and print them out.
 		while (thread1.isAlive() || thread2.isAlive()) {
-			// If the state of Thread 1 changes then print it to the console
-			if (thread1State != thread1.getState().toString()) {
+			// If the state of Thread 1 is NOT equal to the currently stored state
+			if (!thread1State.equals(thread1.getState().toString())) {
+				// Update the stored state
 				thread1State = thread1.getState().toString();
+				// Print the new state of Thread 1 to the console
 				System.out.println(thread1.getName() + " state: " + thread1State);
 			}
-			// If the state of Thread 2 changes then print it to the console
-			if (thread2State != thread2.getState().toString()) {
+			// If the state of Thread 2 is NOT equal to the currently stored state
+			if (!thread2State.equals(thread2.getState().toString())) {
+				// Update the stored state
 				thread2State = thread2.getState().toString();
+				// Print the new state of Thread 2 to the console
 				System.out.println(thread2.getName() + " state: " + thread2State);
 			}
 		} // end while loop
