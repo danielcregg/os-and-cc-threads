@@ -46,12 +46,11 @@ public class RunnableDemoDriver {
 			} // end if
 		} // end while loop
 		
-		// Print the Name, Priority, State and Alive status of the thread after it has
-		// finished executing.
+		// The while loop above will exit when both threads have finished executing.
+		// After execution print the Name, Priority, State and Alive status of both threads.
 		printThreadInfo(thread1);
 		printThreadInfo(thread2);
 	} // End of main method
-
 	// Method to print the Name, Priority, State and Alive status of a given thread.
 	static void printThreadInfo(Thread thread) {
 		System.out.println("***Name: " + thread.getName() +
@@ -59,5 +58,5 @@ public class RunnableDemoDriver {
 				", State: " + thread.getState() +
 				", Alive: " + thread.isAlive() +
 				"***");
-	}
+	} // End of printThreadInfo method
 } // End of class RunnableDemoDriver
