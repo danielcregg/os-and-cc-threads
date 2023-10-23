@@ -5,15 +5,8 @@
     "java.server.launchMode" : "Standard",
     "java.debug.settings.console": "integratedTerminal",
     "files.exclude": {
-        ".github": false, 
         ".devcontainer": true,
-        "bin": false,
-        "test": false,
-        "target": false,
-        "docs": false,
-        ".gitignore": false,
         ".vscode": true,
-        ".gitpod.yml": true,
-        ".gitpod.Dockerfile": true,
+        "README.md": true,
       }
 }
