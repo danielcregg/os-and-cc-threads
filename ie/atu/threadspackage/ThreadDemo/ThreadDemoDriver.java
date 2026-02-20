@@ -12,8 +12,8 @@ public class ThreadDemoDriver {
 		thread1.setName("Thread 1");
 		thread2.setName("Thread 2");
 		// Set the priority of the threads
-		thread1.setPriority(Thread.MIN_PRIORITY); // Thread.Min_Priority = 1
-		thread2.setPriority(Thread.MAX_PRIORITY); // Thread.Max_Prioroty = 10
+		thread1.setPriority(Thread.MIN_PRIORITY); // Thread.MIN_PRIORITY = 1
+		thread2.setPriority(Thread.MAX_PRIORITY); // Thread.MAX_PRIORITY = 10
 		// Start the threads
 		thread1.start();
 		thread2.start();

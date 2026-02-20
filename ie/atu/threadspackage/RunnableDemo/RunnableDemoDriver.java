@@ -1,14 +1,14 @@
 package ie.atu.threadspackage.RunnableDemo;
 
 /* This program demonstrates how to create a thread by implementing the Runnable interface.
- * We crate two threads and pass them the same runnable object which is an instance of the
+ * We create two threads and pass them the same runnable object which is an instance of the
  * RunnableDemo class. We then start the threads and monitor their state. We also print out
  * the name of the thread, its priority, its state and whether or not it is alive. 
  */
 public class RunnableDemoDriver {
 	public static void main(String args[]) {
 
-		// Create to string variables to store the state of each thread
+		// Create two string variables to store the state of each thread
 		String thread1State = "unknown";
 		String thread2State = "unknown";
 

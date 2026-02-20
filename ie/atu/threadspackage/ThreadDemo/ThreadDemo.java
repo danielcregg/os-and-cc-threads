@@ -3,7 +3,7 @@ package ie.atu.threadspackage.ThreadDemo;
 class ThreadDemo extends Thread {
 
 	public void run() {
-		// Print the Name, Priority, State amd Alive status of the thread.
+		// Print the Name, Priority, State and Alive status of the thread.
 		System.out.println("Name: " + Thread.currentThread().getName() + 
 		", Priority: " + Thread.currentThread().getPriority() +
 		", State: " + Thread.currentThread().getState() +
